@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>X-Wing Squadron Builder</title>
+        <!--Add CSS Here-->
+        <link rel="stylesheet" type="text/css" href="/homepageStyle.css">
+
+        <!--Add Script for Handeling Response Here-->
+        <script src="/homepageBundle.js"></script>
+    </head>
+    <body>
+        <header id="homeHeader">
+            <h1>X-Wing Squadron Builder</h1>
+            <p>
+                This is a squadron builder for 
+                the tabletop game X-Wing by Fantasy 
+                Flight Games.
+            </p>
+            <p>
+                Made by TJ Larson
+            </p>
+        </header>
+        <section id="login">
+            <form id="loginForm" action="/getUser" method="post">
+                <label for="name">Name: </label>
+                <input id="userNameField" type="text" name="name" />
+                <input type="submit" value="Login" />
+            </form>
+        </section>
+        <section id="squadronCreation">
+            <h2>Create New Squadron</h2>
+            <form id="squadronForm" action="/createSquadron" method="post">
+                <label for="name">Name: </label>
+                <input id="squadronNameField" type="text" name="name" />
+                <select id="factionSelect">
+                    <option value="Rebel%20Alliance">Rebel Alliance</option>
+                    <option value="Galactic%20Empire">Galactic Empire</option>
+                    <option value="Scum%20and%20Villainy">Scum and Villainy</option>
+                </select>
+                <select id="pointsLimit">
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                </select>
+                <input type="submit" value="Create Squadron" />
+            </form>
+            <button id="logout">Logout</button>
+        </section>
+        <section id="messages"></section>
+        <hr />
+        <section id="content"></section>
+    </body>
+</html>

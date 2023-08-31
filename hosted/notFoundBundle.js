@@ -1,0 +1,1 @@
+window.onload=()=>{document.querySelector("#home").addEventListener("click",(()=>{window.location.href="/"}))};

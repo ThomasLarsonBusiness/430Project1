@@ -1,0 +1,118 @@
+/*Yellow Color Found Here: https://www.schemecolor.com/star-wars-logo-colors.php*/
+body{
+    background-color: black;
+    color: #FFE81F;
+    margin-top: 0em;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    width: 14em;
+    margin-left: 0.45em;
+    margin-right: auto;
+    padding-bottom: 0.3em;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+/*Sticky Example Taken from Here:  https://www.designcise.com/web/tutorial/how-to-fix-issues-with-css-position-sticky-not-working*/
+#messageContainer {
+    background-color: #4d4d4d;
+    position: sticky;
+    top: 0;
+    width: 25em;
+    margin: auto;
+    padding-top: 0.05em;
+    padding-bottom: 0.05em; 
+}
+
+#message {
+    text-align: center;
+}
+
+#info {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/*Using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+#squadron{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Graying out an Element:  https://stackoverflow.com/questions/286275/gray-out-image-with-css*/
+.title:hover {
+    opacity: 0.5;
+}
+
+.tab p {
+    flex: 0 0 100%;
+    text-align: left;
+    font-size: 2em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ship {
+    font-size: 1.0em;
+    margin-top: 6px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+}
+
+.ship button{
+    display: block;
+    width: 14em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.ship p{
+    font-size: 1.2em;
+    text-align: center; 
+}
+
+.bigShip {
+    font-size: 1.0em;
+    margin-top: 6px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+}
+
+.bigShip button{
+    width: 14em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.bigShip p{
+    font-size: 1em;
+    text-align: center; 
+}
+
+.bigShip button {
+    display: block;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.bigShip img {
+    display: inline-block;
+    margin-left: 0em;
+}

@@ -1,0 +1,65 @@
+/*Yellow Color Found Here: https://www.schemecolor.com/star-wars-logo-colors.php*/
+body {
+    background-color: black;
+    color: #FFE81F;
+}
+
+header {
+    text-align: center;
+}
+
+/*Graying out an Element:  https://stackoverflow.com/questions/286275/gray-out-image-with-css*/
+button:hover {
+    opacity: 0.5;
+}
+
+header p {
+    font-size: 1.3em;
+}
+
+#login {
+    text-align: center;
+}
+
+#logout {
+    margin: auto;
+}
+
+#messages{
+    text-align: center;
+}
+
+#squadronCreation {
+    text-align: center;
+}
+
+#squadronCreation {
+    display: none;
+}
+
+/*Using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.squadron {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    min-width: 20em;
+}
+
+.squadron h2 {
+    font-size: 1.6em;
+}
+
+.squadron p {
+    font-size: 1.2em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.squadron input:hover {
+    opacity: 0.5;
+}

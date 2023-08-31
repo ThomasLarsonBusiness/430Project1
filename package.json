@@ -1,0 +1,36 @@
+{
+  "name": "430project1",
+  "version": "1.0.0",
+  "description": "Project 1 for IGME 430, an X-Wing Squadron Builder",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\"",
+    "nodemon": "nodemon -e js,mjs,json,html,css --watch ./src --watch ./hosted",
+    "buildBundle": "webpack",
+    "watchBundle": "webpack watch",
+    "heroku-postbuild": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjl7357/430Project1.git"
+  },
+  "author": "TJ Larson",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tjl7357/430Project1/issues"
+  },
+  "homepage": "https://github.com/tjl7357/430Project1#readme",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "xwing-data": "^1.0.1"
+  }
+}
